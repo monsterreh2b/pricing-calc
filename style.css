@@ -1,0 +1,15 @@
+body, .jumbotron {
+    padding: 30px;
+}
+
+.center {
+    text-align: center;
+}
+.text-giant {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form-group {
+    padding: 0 20%;
+}
