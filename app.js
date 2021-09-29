@@ -5,6 +5,7 @@ const qtyInput = document.querySelector("[name=quantity]");
 console.log(qtyInput);
 const total = document.querySelector(".total");
 console.log(total);
+const qtyLabel = document.querySelector(".quantity-label");
 
 //functions for response
 function calcClassCost(){
@@ -18,6 +19,10 @@ function calcClassCost(){
     total.innerText = "$" + tot.toFixed(2);
 }
 
+function updateQuantityLabel(){
+    const qty = qtyInput.value;
+    qtyLabel.innerText = qty;
+}
 //on first run
 
 calcClassCost();
@@ -25,7 +30,7 @@ calcClassCost();
 //listen for change
 priceInput.addEventListener("input", calcClassCost);
 qtyInput.addEventListener("input", calcClassCost);
-
+qtyInput.addEventListener("input", updateQuantityLabel);
 
 
 

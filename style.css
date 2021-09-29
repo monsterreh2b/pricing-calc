@@ -13,3 +13,9 @@ body, .jumbotron {
 .form-group {
     padding: 0 20%;
 }
+
+span.label.label-primary {
+    margin-left: 5px;
+    position: relative;
+    bottom: 2px;
+}
